@@ -21,7 +21,8 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/summary">
             <a className={styles.card}>
-              <h2>Summary &rarr;</h2>
+              <Typography variant="h2">Summary &rarr;</Typography>
+              <Typography variant="subtitle1">Check your season results</Typography>
             </a>
           </Link>
           {/* <a href="https://nextjs.org/docs" className={styles.card}>

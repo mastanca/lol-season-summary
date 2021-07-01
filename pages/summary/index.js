@@ -5,7 +5,7 @@ import { useTheme } from '@material-ui/core/styles';
 const Summary = () => {
     const theme = useTheme();
     return (
-        <Grid container spacing={theme.spacing}>
+        <Grid container>
           <Typography variant="h1">Summary</Typography>
         </Grid>
     );
