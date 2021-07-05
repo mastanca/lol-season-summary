@@ -1,4 +1,5 @@
 export async function getMatches(limit = 0, offset = 20) {
+  // This returns match ids actually
   const res = await fetch(
     `${baseURL}/lol/match/v5/matches/by-puuid/${process.env.LOL_PUUID}/ids?type=ranked&start=${limit}&count=${offset}`,
     {
