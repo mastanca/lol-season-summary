@@ -1,4 +1,4 @@
-export async function getMatches(limit = 0, offest = 20) {
+export async function getMatches(limit = 0, offset = 20) {
   const res = await fetch(
     `${baseURL}/lol/match/v5/matches/by-puuid/${process.env.LOL_PUUID}/ids?type=ranked&start=${limit}&count=${offset}`,
     {

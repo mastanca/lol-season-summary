@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import { getMatches } from '../../src/matches'
 import { getSummonerData } from '../../src/summoner_data'
@@ -27,6 +27,11 @@ const Summary = ({ summonerData, matchesData }) => {
         <Typography variant="body1">
           Summoner: {summonerData.gameName}
         </Typography>
+      </Grid>
+      <Grid item>
+        <Paper>
+          <Typography varaint="h3">Matches</Typography>
+        </Paper>
       </Grid>
     </Grid>
   )
