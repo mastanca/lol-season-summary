@@ -31,6 +31,11 @@ const Summary = ({ summonerData, matchesData }) => {
       <Grid item>
         <Paper>
           <Typography varaint="h3">Matches</Typography>
+          <Typography variant="body1">
+            {matchesData.map((matchId) => {
+              return `${matchId}, `
+            })}
+          </Typography>
         </Paper>
       </Grid>
     </Grid>
